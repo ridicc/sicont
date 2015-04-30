@@ -1,0 +1,27 @@
+extends layout_users
+block content
+    div.negro
+    if (!user)
+       // a(href="/logout") Identificarse
+    if (user)
+        p Sesi&#243n iniciada por: #{user.username}
+        a.cerrar(href="/logout") Cerrar Seci&#243n
+    div.menu
+        input(type='button',value='Cierre',id='cierre')
+        input(type='button',value='Inicio',id='inicio')
+        input(type='button',value='Balance',id='balance')
+        input(type='button',value='Servicios',id='servicios')
+        input(type='button',value='Giro',id='giro')
+        a.menu(href="/transaccion") Transaccion
+        //input(type='button',value='Transacción',id='transaccion')
+    div.cuerpo
+        h2 TRANSACCION
+
+
+    
+        
+                
+
+
+
+

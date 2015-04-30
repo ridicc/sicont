@@ -1,0 +1,23 @@
+extends layout
+block content
+    form(role='form', action="/login",method="post")
+        input(type='submit',value='Ingresar',id='ingresar',tabindex= '3')
+        input(type='password',placeholder='Contraseña',name="password",tabindex= '2')
+        input(autofocus=type='text',placeholder='Usuario',name="username",tabindex= '1')
+    h1= title
+
+ //   extends layout
+    block content
+        .container
+            h1 Página de Acceso
+            p.lead Diga algo que vale la pena aquí.
+            br
+            form(role='form', action="/login",method="post", style='max-width: 300px;')
+                .form-group
+                    input.form-control(type='text', name="username", placeholder='Enter Username')
+                .form-group
+                    input.form-control(type='password', name="password", placeholder='Password')
+                button.btn.btn-default(type='submit') Aceptar
+                &nbsp;
+                a(href='/')
+                  button.btn.btn-primary(type="button") Cancelar

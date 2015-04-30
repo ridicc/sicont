@@ -1,0 +1,18 @@
+extends layout_users
+block content
+    div.negro
+    if (!user)
+        // a(href="/logout") Identificarse
+    if (user)
+        p Sesi&#243n iniciada por: #{user.username}
+        a.cerrar(href="/logout") Cerrar Seci&#243n
+    div.menu
+        a.lista(href="#") Cierre
+        a.lista(href="#") Inicio
+        a.lista(href="#") Balance
+        a.lista(href="#") Servicios
+        a.lista(href="giro") Giro
+        a.lista(href="transaccion") Transaccion
+
+    div.cuerpo
+        h2 TRANSACCION
